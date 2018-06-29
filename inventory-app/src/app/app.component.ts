@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from './product.model';
+import { Product } from './product/product.model';
 
 @Component({
   selector: 'inventory-app-root',
@@ -32,5 +32,9 @@ export class AppComponent {
       ['Men', 'Accessories', 'Hats'],
       29.99)
     ];
+  }
+
+  productWasSelected(product: Product): void {
+    console.log('Product clicked: ', product);
   }
 }
