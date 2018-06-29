@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Product } from './product/product.model';
 
 @Component({
-  selector: 'inventory-app-root',
+  selector: 'app-root',
   template: `
   <div class="inventory-app">
   (Products will go here soon)
