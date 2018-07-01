@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
+import { 
+  Component,
+  EventEmitter 
+} from '@angular/core';
+
 import { Product } from './product.model';
 
+/**
+* @InventoryApp: the top-level component for our application
+*/
 @Component({
-  selector: 'app-root',
-  template: `
-  <div class="inventory-app">
-  (Products will go here soon)
-  </div>
-  `
+  selector: 'inventory-app-root',
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   products: Product[];
+  
   constructor() {
     this.products = [
     new Product(
