@@ -3,13 +3,13 @@ import {
   Input,
   HostBinding
 } from '@angular/core';
-import { Product } from '../product.model'
+import { Product } from '../product.model';
 
 /**
 * @ProductImage: A component to show a single Product's image
 */
 @Component({
-  selector: 'app-product-image',
+  selector: 'product-image',
   template: `
   <img class="product-image" src={{product.imageUrl}}>
   `
