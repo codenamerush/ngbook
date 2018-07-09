@@ -3,3 +3,11 @@
     <div *ngSwitchCase="'B'">Var is B</div>
     <div *ngSwitchDefault>Var is something else</div>
 </div>
+
+<!--to insert a new value-->
+<div class="container" [ngSwitch]="myVar">
+    <div *ngSwitchCase="'A'">Var is A</div>
+    <div *ngSwitchCase="'B'">Var is B</div>
+    <div *ngSwitchCase="'C'">Var is C</div>
+    <div *ngSwitchDefault>Var is something else</div>
+</div>
